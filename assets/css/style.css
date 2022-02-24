@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap');
+
+:root{
+  --background-color: #333;
+  --color: rgb(216, 186, 186);
+  --background-btn: rgb(216, 186, 186);
+  --color-btn: #333;
+}
+
+*, *::before, *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-toggle{
+  height: 100vh;
+  background-color: var(--background-color);
+  color: var(--color);
+  transition: 1s linear;
+}
+
+h1{
+  text-align: center;
+  padding-top: 60px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.paragraph{
+  max-width: 500px;
+  margin: 70px auto;
+  font-family: 'Lora', sans-serif;
+}
+
+.paragraph p{
+  margin-top: 20px;
+}
+
+.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 100px;
+  height: 100px;
+  background-color: var(--background-btn);
+  color: var(--color-btn);
+  border: none;
+  border-radius: 50%;
+  font-size: 1.5em;
+  font-family: 'Lora', sans-serif;
+  cursor: pointer;
+}
+
+.btn:focus{
+  outline: none;
+}
+
+.btn:active{
+  transform: scale(0.95);
+}
+
+@media (max-width: 400px) {
+  .btn{
+    height: 50px;
+    width: 50px;
+  }
+}
+
+
+
+
+
+
